@@ -1,100 +1,142 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Marvel vs DC</title>
+    <title>Priyansh | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <style>
-        body {
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #111;
-            color: white;
-            text-align: center;
         }
 
-        header {
-            background: linear-gradient(to right, red, blue);
-            padding: 20px;
-            font-size: 28px;
-            font-weight: bold;
+        body{
+            color:white;
+            background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+            url("https://images.unsplash.com/photo-1498050108023-c5249f4df085");
+            background-size:cover;
+            background-attachment:fixed;
         }
 
-        section {
-            padding: 30px;
+        header{
+            text-align:center;
+            padding:60px 20px;
         }
 
-        .container {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
+        header h1{
+            font-size:48px;
         }
 
-        .card {
-            background: #222;
-            padding: 20px;
-            margin: 15px;
-            width: 300px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px gray;
+        header p{
+            font-size:20px;
+            margin-top:10px;
+            color:#00eaff;
         }
 
-        img {
-            width: 100%;
-            border-radius: 10px;
+        section{
+            background:rgba(0,0,0,0.8);
+            margin:40px auto;
+            padding:40px;
+            width:80%;
+            border-radius:10px;
         }
 
-        footer {
-            background: #000;
-            padding: 15px;
-            margin-top: 20px;
+        h2{
+            margin-bottom:20px;
+            color:#00eaff;
+            border-bottom:2px solid #00eaff;
+            display:inline-block;
+            padding-bottom:5px;
+        }
+
+        ul{
+            margin-left:20px;
+            margin-top:10px;
+        }
+
+        li{
+            margin-bottom:8px;
+        }
+
+        .skills span{
+            display:inline-block;
+            background:#00eaff;
+            color:black;
+            padding:8px 12px;
+            margin:5px;
+            border-radius:5px;
+        }
+
+        footer{
+            text-align:center;
+            padding:20px;
+            background:black;
+            margin-top:30px;
+        }
+
+        @media(max-width:768px){
+            section{
+                width:95%;
+            }
+
+            header h1{
+                font-size:32px;
+            }
         }
     </style>
 </head>
+
 <body>
 
 <header>
-    MARVEL vs DC
+    <h1>Priyansh</h1>
+    <p>Computer Science Student | Tech Enthusiast</p>
 </header>
 
 <section>
-    <h2>About Marvel</h2>
-    <div class="container">
-        <div class="card">
-            <img src=https://puzzlemania-154aa.kxcdn.com/products/2024/puzzle-trefl-1000-pieces-premium-plus-marvel-heroes.webp alt="Marvel">
-            <h3>Marvel Universe</h3>
-            <p>Marvel Comics was founded in 1939. Popular superheroes include Iron Man, Spider-Man, Captain America, and Thor.</p>
-        </div>
+    <h2>About Me</h2>
+    <p>
+        I am a passionate Computer Science student who enjoys working with databases,
+        backend technologies, and big data tools. I love building projects and learning
+        new technologies that solve real-world problems.
+    </p>
+</section>
+
+<section>
+    <h2>My Studies</h2>
+    <ul>
+        <li>Bachelor's Degree in Computer Science</li>
+        <li>Focused on Data Engineering & Database Systems</li>
+        <li>Hands-on experience with MongoDB, Cassandra, HBase, Hadoop</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Skills</h2>
+    <div class="skills">
+        <span>Python</span>
+        <span>Java</span>
+        <span>MongoDB</span>
+        <span>Cassandra</span>
+        <span>Hadoop</span>
+        <span>Linux</span>
     </div>
 </section>
 
 <section>
-    <h2>About DC</h2>
-    <div class="container">
-        <div class="card">
-            <img src=https://m.media-amazon.com/images/I/91SuNIt0nEL._AC_UF1000,1000_QL80_.jpg alt="DC">
-            <h3>DC Universe</h3>
-            <p>DC Comics was founded in 1934. Popular superheroes include Batman, Superman, Wonder Woman, and The Flash.</p>
-        </div>
-    </div>
-</section>
-
-<section>
-    <h2>Comparison</h2>
-    <div class="container">
-        <div class="card">
-            <h3>Marvel</h3>
-            <p>More humorous and interconnected cinematic universe (MCU).</p>
-        </div>
-        <div class="card">
-            <h3>DC</h3>
-            <p>Darker themes and legendary standalone heroes.</p>
-        </div>
-    </div>
+    <h2>Hobbies</h2>
+    <ul>
+        <li>Exploring new technologies</li>
+        <li>Solving coding challenges</li>
+        <li>Learning about distributed systems</li>
+        <li>Listening to music</li>
+    </ul>
 </section>
 
 <footer>
-    © 2026 Marvel vs DC Fan Page
+    © 2026 Priyansh | All Rights Reserved
 </footer>
 
 </body>
